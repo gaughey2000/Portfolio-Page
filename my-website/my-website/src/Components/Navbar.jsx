@@ -8,26 +8,20 @@ function Navbar () {
     };
 
     return (
-        <div className='w-screen h-16 bg-[#e0dac9] flex items-center justify-between px-4'>
-            <div className='text-[#798a73] text-2xl font-bold'>
-                <h5>My Website</h5>               
-            </div>
-            <div className='flex md:hidden items-center hover:cursor-pointer'>
-                <box-icon onClick={toggleMenu} name='menu'></box-icon>
-            </div>
-            <div className={`flex flex-col md:flex-row items-center gap-4 ${isOpen ? 'block' : 'hidden'} md:block`}>
-                <ul className={'gap-4 text-[#798a73]'}>
-                    <li>
-                        <NavLink to='/' className='hover:text-[#4b5c4a]'>Home</NavLink>
-                    </li>
-                    <li>
-                        <NavLink to='/about' className='hover:text-[#4b5c4a]'>About</NavLink>
-                    </li>
-                    <li>
-                        <NavLink to='/contact' className='hover:text-[#4b5c4a]'>Contact</NavLink>
-                    </li>
-                </ul>
-            </div>
+        <div className='text-white'>
+            <h1 className="w-full text-3xl font-bold text-[#00df9a] text-center py-4">My Website</h1>
+            <nav className="flex justify-between items-center bg-gray-800 p-4">
+                <div className="flex items-center">
+                    <div className="text-3xl cursor-pointer" onClick={toggleMenu}>
+                        <box-icon name={isOpen ? 'x' : 'menu'} color="white"></box-icon>
+                    </div>
+                    <div className={`flex flex-col ${isOpen ? 'block' : 'hidden'} md:flex md:flex-row md:items-center`}>
+                        <NavLink to="/" className="text-white px-4 py-2 hover:bg-gray-700 rounded">Home</NavLink>
+                        <NavLink to="/about" className="text-white px-4 py-2 hover:bg-gray-700 rounded">About</NavLink>
+                        <NavLink to="/contact" className="text-white px-4 py-2 hover:bg-gray-700 rounded">Contact</NavLink>
+                    </div>
+                </div>
+            </nav>    
         </div>
   );
 }
