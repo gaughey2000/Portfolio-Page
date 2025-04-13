@@ -8,20 +8,26 @@ function Navbar () {
     };
 
     return (
-        <div className='text-white'>
-            <h1 className="w-full text-3xl font-bold text-[#00df9a] text-center py-4">My Website</h1>
-            <nav className="flex justify-between items-center bg-gray-800 p-4">
-                <div className="flex items-center">
-                    <div className="text-3xl cursor-pointer" onClick={toggleMenu}>
-                        <box-icon name={isOpen ? 'x' : 'menu'} color="white"></box-icon>
-                    </div>
-                    <div className={`flex flex-col ${isOpen ? 'block' : 'hidden'} md:flex md:flex-row md:items-center`}>
-                        <NavLink to="/" className="text-white px-4 py-2 hover:bg-gray-700 rounded">Home</NavLink>
-                        <NavLink to="/about" className="text-white px-4 py-2 hover:bg-gray-700 rounded">About</NavLink>
-                        <NavLink to="/contact" className="text-white px-4 py-2 hover:bg-gray-700 rounded">Contact</NavLink>
-                    </div>
+        <div className='flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 text-white'>
+            <h1 className="w-full text-3xl font-bold text-[#00df9a] text-center py-4">MY WEBSITE.</h1>
+            <div onClick={toggleMenu} className="block md:hidden">
+                <box-icon name={isOpen ? 'x' : 'menu'} size="2rem" color="#00df9a"></box-icon>
+            </div>
+            <div className={`fixed left-0 top-0 w-[60%] h-full border-r-gray-900 bg-[#0030000] ease-in-out duration-500 ${isOpen ? 'translate-x-0' : '-translate-x-full'}`}>
+                <div className="fixed left-0 top-0 w-[60%] h-full border-r-gray-900 bg-[#0030000]">
+                    <ul className="pt-24">
+                        <li className="p-4 cursor-pointer border-b border-gray-600">
+                            <NavLink to="/" className="text-white hover:text-[#00df9a]">HOME</NavLink>
+                        </li>
+                        <li className="p-4 cursor-pointer border-b border-gray-600">
+                            <NavLink to="/about" className="text-white hover:text-[#00df9a]">ABOUT</NavLink>
+                        </li>
+                        <li className="p-4 cursor-pointer">
+                            <NavLink to="/contact" className="text-white hover:text-[#00df9a]">CONTACT</NavLink>
+                        </li>
+                    </ul>
                 </div>
-            </nav>    
+            </div>
         </div>
   );
 }
