@@ -16,7 +16,7 @@ function Navbar () {
                     </div>
             </div>
         {/** MOBILE NAV BAR*/} 
-            <div className={`md:hidden fixed left-0 top-0 w-[60%] h-full border-r-gray-900 bg-gray-800 ease-in-out duration-500 ${isOpen ? 'translate-x-0' : '-translate-x-full'}`}>
+            <div className={`md:hidden fixed left-0 top-0 w-[60%] h-[50%] border-r-gray-900 bg-gray-800 ease-in-out duration-500 ${isOpen ? 'translate-x-0' : '-translate-x-full'}`}>
                 <div className="fixed left-0 top-0 w-[60%] h-full border-r-gray-900 bg-[#0030000]">   
                    <ul className="pt-24">
                         <li className="p-4 cursor-pointer border-b border-gray-600">
@@ -29,10 +29,10 @@ function Navbar () {
                             <NavLink to="/contact" className="text-white hover:text-[#00df9a]">CONTACT</NavLink>
                         </li>
                         <li className="p-4 cursor-pointer border-b border-gray-600">
-                            <NavLink to="/contact" className="text-white hover:text-[#00df9a]">PROJECTS</NavLink>
+                            <NavLink to="/projects" className="text-white hover:text-[#00df9a]">PROJECTS</NavLink>
                         </li>
                         <li className="p-4 cursor-pointer">
-                            <NavLink to="/contact" className="text-white hover:text-[#00df9a]">BLOG</NavLink>
+                            <NavLink to="/blog" className="text-white hover:text-[#00df9a]">BLOG</NavLink>
                         </li>
                     </ul>
                 </div>
