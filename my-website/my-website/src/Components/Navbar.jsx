@@ -10,7 +10,7 @@ function Navbar () {
     return (
         <div className='flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 text-white'>
             <div className="flex w-screen h-24 bg-gray-950 fixed top-0 left-0">
-                <h1 className="w-full text-3xl font-bold text-[#00df9a] text-center py-4 z-50">MY WEBSITE.</h1>
+                <NavLink to="/"><h1 className="w-full text-3xl font-bold text-[#00df9a] text-center py-4 z-50">MY WEBSITE.</h1></NavLink>
                     <div onClick={toggleMenu} className="block md:hidden items-center justify-center cursor-pointer z-50 p-4">
                         <box-icon name={isOpen ? 'x' : 'menu'} size="2rem" color="#00df9a"></box-icon>
                     </div>
