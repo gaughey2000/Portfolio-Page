@@ -40,6 +40,7 @@ function About () {
             I am currently looking for a junior developer role to further my knowledge and experience in the field.
             </p>
             <div className="w-screen flex flex-wrap justify-center">
+                <h1 className="text-center text-2xl w-full top-50 ">My...</h1>   
                 <div onClick={handleSkillsClick} className="w-1/2 h-1/2 p-4 text-center text-white  hover:cursor-pointer hover:text-[#00df9a]">
                     <h1 className="text-center text-2xl w-full top-50 ">
                         Skills
@@ -63,11 +64,54 @@ function About () {
                     </h1>
                 </div>
 
-                <div className={`w-screen m-4 h-1/2 p-4 text-center text-white hover:cursor-pointer hover:text-[#00df9a] ${showSkills ? 'block' : 'hidden'}`}>
-                    <p>
-                        I have experience with HTML, CSS, JavaScript, React, Node.js, Express.js, MongoDB, and Git. 
-                        I am currently learning TypeScript and looking to expand my knowledge in the field.
-                    </p>
+                <div className={`w-screen m-4 h-1/2 p-4 text-white hover:cursor-pointer hover:text-[#00df9a] ${showSkills ? 'flex flex-wrap' : 'hidden'}`}>
+                    <ul className="flex flex-wrap justify-center text-center ">
+                        <li className="p-4 cursor-pointer hover:text-2xl">
+                            <box-icon type='logo' name='html5' color='#ffffff'></box-icon>
+                            <p className="text-[#00df9a]">HTML</p>
+                        </li> 
+                        <li className="p-4 cursor-pointer hover:text-2xl">
+                            <box-icon type='logo' name='css3' color='#ffffff'></box-icon>
+                            <p className="text-[#00df9a]">CSS</p>
+                        </li>
+                        <li className="p-4 cursor-pointer hover:text-2xl">
+                            <box-icon name='tailwind-css' type='logo' color='#ffffff' ></box-icon>
+                            <p className="text-[#00df9a]">TAILWINDCSS</p>
+                        </li>
+                        <li className="p-4 cursor-pointer hover:text-2xl">
+                            <box-icon name='javascript' type='logo' color='#ffffff' ></box-icon>
+                            <p className="text-[#00df9a]">JAVASCRIPT</p>
+                        </li>
+                        <li className="p-4 cursor-pointer hover:text-2xl">
+                            <box-icon name='react' type='logo' color='#ffffff' ></box-icon>
+                            <p className="text-[#00df9a]">REACT</p>
+                        </li>
+                        <li className="p-4 cursor-pointer hover:text-2xl">
+                            <box-icon name='postgresql' type='logo' color='#ffffff' ></box-icon>
+                            <p className="text-[#00df9a]">POSTGRESQL</p>
+                        </li>
+                        <li className="p-4 cursor-pointer hover:text-2xl">
+                            <box-icon name='mongodb' type='logo' color='#ffffff' ></box-icon>
+                            <p className="text-[#00df9a]">MONGODB</p>
+                        </li>
+                        <li className="p-4 cursor-pointer hover:text-2xl">
+                            <box-icon name='python' type='logo' color='#ffffff' ></box-icon>
+                            <p className="text-[#00df9a]">PYTHON</p>
+                        </li>
+                        <li className="p-4 cursor-pointer hover:text-2xl">
+                            <box-icon name='git' type='logo' color='#ffffff' ></box-icon>
+                            <p className="text-[#00df9a]">GIT</p>
+                        </li>
+                        <li className="p-4 cursor-pointer hover:text-2xl">
+                            <box-icon name='terminal' type='solid' color='#ffffff' ></box-icon>
+                            <p className="text-[#00df9a]">TERMINAL</p>
+                        </li>
+                        <li className="p-4 cursor-pointer hover:text-2xl">
+                            <box-icon name='nodejs' type='logo' color='#ffffff' ></box-icon>
+                            <p className="text-[#00df9a]">NODEJS</p>
+                        </li>
+                                               
+                    </ul>
                 </div>
                 <div className={`w-screen m-4 h-1/2 p-4 text-center text-white hover:cursor-pointer hover:text-[#00df9a] ${showQualifications ? 'block' : 'hidden'}`}>
                     <p>

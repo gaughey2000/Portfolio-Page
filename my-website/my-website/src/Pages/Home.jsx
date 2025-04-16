@@ -11,7 +11,7 @@ function Home () {
           <p className="text-center md:block">
             This is my personal website. I built this page using React and plan to use this website to
             showcase my projects and show-off my skills as a developer. 
-            Using this sight I plan to commit to posting  a personal blog to help keep track 
+            Using this sight I intend to commit to posting  a personal blog to help keep track 
             of my learning, thoughts and development.
           </p>
         </div>
