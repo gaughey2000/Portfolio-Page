@@ -114,35 +114,62 @@ function About () {
                     </ul>
                 </div>
                 <div className={`w-screen m-4 h-1/2 p-4 text-center text-white hover:cursor-pointer hover:text-[#00df9a] ${showQualifications ? 'block' : 'hidden'}`}>
-                    <p>
-                        I have completed a full stack web development course with a focus on React and Node.js. 
-                        I have also completed a number of projects using these technologies.
-                    </p>
+                    <h1>Education:</h1>
+                    <ol>
+                        <p>GCSE</p>
+                        <li>
+                            <p>Maths:  A</p>
+                            <p>Core Science: B</p>
+                            <p>Additional Science: A</p>
+                            <p>English Language: C</p>
+                            <p>English Literature: B</p>
+                            <p>History: A</p>
+                            <p>Religious Education: B</p>
+                            <p>Physical Education: A</p>
+                        </li>
+                        <p>College:</p>
+                        <li>
+                            <p>Level 3 Extended Diploma in Sport: Distinction Distinction Distinction</p>
+                        </li>
+                        <p>University:</p>
+                        <li>
+                            <p>
+                                I attended MMU and studied a BSc in Exercise Science and bio-mechanics however unfortunatly due to 2020 lockdowns
+                                I made the decsion to leave university due to impact it had on the level of education I was recieving due to 
+                                course requiring pratical seminars and experiments/test.
+                            </p>
+                        </li>
+                    </ol>
+
                 </div>
                 <div className={`w-screen m-4 h-1/2 p-4 text-center text-white hover:cursor-pointer hover:text-[#00df9a] ${showInterests ? 'block' : 'hidden'}`}>
                     <p>
-                        I am interested in web development, game development, and machine learning. 
-                        I enjoy learning new technologies and expanding my knowledge in the field.
+                        Outside of software development, I enjoy to keep myself busy with hobbies that challange me.
+                        My main hobbie's are martial arts (BJJ, Boxing, Wrestling, MMA). I have been a lifelong 
+                        competitor in combat sports and found it brings a good healthy structure to my week.
+                         More recently I have taken upon more active hobbies including padel, rock climbing, chess 
+                        and reading litrature. I find these activites to be great for my mental health and help me 
+                        to stay focused and motivated whilst also learning something new everyday and improving myself.
                     </p>
                 </div>
                 <div className={`w-screen m-4 h-1/2 p-4 text-center text-white hover:cursor-pointer hover:text-[#00df9a] ${showCharacter ? 'block' : 'hidden'}`}>
                     <p>
-                        I am a hard-working, motivated, and passionate individual. 
-                        I enjoy working in a team and collaborating with others to achieve a common goal.
-                        I am always looking to improve my skills and knowledge in the field.
-                        I am a quick learner and enjoy taking on new challenges.
-                        I am also a friendly and approachable person who enjoys meeting new people.
-                        I am always willing to help others and share my knowledge with them.
-                        I am a team player and enjoy working with others to achieve a common goal.
-                        I am also a good communicator and enjoy sharing my ideas with others.
-                        I am always looking to improve my skills and knowledge in the field.
-                        I am a quick learner and enjoy taking on new challenges.
-                        I am also a friendly and approachable person who enjoys meeting new people.
-                        I am always willing to help others and share my knowledge with them.
-                        I am a team player and enjoy working with others to achieve a common goal.
-                        I am also a good communicator and enjoy sharing my ideas with others.
-                        I am always looking to improve my skills and knowledge in the field.
-                        
+                        'Patience is a Vertue' - I grew up as the oldest brother of 4 children which sculpted me to have patience.
+                        I feel this is one of my strongest traits as I am able to stay focused and find soloutions when setbacks occur.
+                        <br />
+                        <br />
+                        "I have no special talents. I am only passionately curious." - Albert Einstein.
+                        Naturally I am a very curious person. This has led me to alot of mistakes and failures in my life and work.
+                        However because of my curiousity it alows me to stay motivated and discaplined meaning my 'failures'
+                        never stay failures for long.
+                        <br />
+                        <br />
+                        "We are what we repeatedly do. Excellence, then, is not an act, but a habit." - Aristotle.
+                        Coming from a competitive background I have always been driven to be the best I can be.
+                        I've found it intresting how habbits and structure effect a persons performance.
+                        This led me to become a discaplined person who tries to find as many wins as possible.  
+
+
                     </p>
                 </div>
             </div>
