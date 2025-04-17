@@ -167,7 +167,8 @@ function About () {
                         "We are what we repeatedly do. Excellence, then, is not an act, but a habit." - Aristotle.
                         Coming from a competitive background I have always been driven to be the best I can be.
                         I've found it intresting how habbits and structure effect a persons performance.
-                        This led me to become a discaplined person who tries to find as many wins as possible.  
+                        This led me to become a discaplined person who tries to find as many wins as possible throughout a day by
+                        making sure I focus on completing my daily task and habbits.  
 
 
                     </p>
